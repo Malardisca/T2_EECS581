@@ -1,0 +1,29 @@
+.input 
+{
+    margin: top 20%;
+    margin-left:20%;
+    margin-bottom: 500px;
+    float: middle left;
+}
+.input label
+{
+    display: block;
+    margin-bottom:50%;
+    font-family: 'roboto';
+    font-weight: 500;
+}
+.output label
+{
+    display: block;
+    margin-bottom: 2px;
+    font-family: 'roboto';
+    font-weight: 500;
+}
+select
+{
+    border: 2px solid #555;
+    height:40px;
+    width: 400px;
+    padding: 0 15px;
+    margin-right: 800px;
+}
