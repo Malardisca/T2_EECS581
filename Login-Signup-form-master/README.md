@@ -7,3 +7,7 @@ Built with **HTML5** and **CSS3**.
 
 * Require the username and password on the **login** page.
 * Require full name, email address, username and a password on the **sign up** page.
+
+NEED TO CITE CODE BEFORE 9/30/2021
+Login_Signup-form-master IS FROM GITHUB
+NEED PERMISSION, AUTHOR AND SOURCE
