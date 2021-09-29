@@ -1,0 +1,59 @@
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <title>Exchange_Selection</title>
+            <link rel="stylesheet" href="style.css">
+        <script>
+            function Selecting() {
+                    var s1 = document.getElementById('input').value;
+                    if (s1 == "US") {
+                        var optionArray = ['NYSE  |  New York Stock Exchange', 'NASDAQ'];
+                    }
+                    else if (s1 == "CN") {
+                        var optionArray = ['SSE  |  Shanghai Stock Exchange', 'SEHK  |  Hong Kong Stock Exchange', 'SZSE  |  Shenzhen Stock Exchange'];
+                    }
+                    else if (s1 == "EU") {
+                        var optionArray = ['EURONEXT', 'LSEGroup'];
+                    }
+                    else if (s1 == "IN") {
+                        var optionArray = ['NSE  |  National Stock Exchange'];
+                    }
+                    else if (s1 == "JP") {
+                        var optionArray = ['JPX  |  Japan Stock Exchange'];
+                    }
+                    else if (s1 == "CA") {
+                        var optionArray = ['TSE  |  Toronto Stock Exchange'];
+                    }
+                    else if (s1 == "SG") {
+                        var optionArray = ['SGX  |  Singapore Exchange'];
+                    }
+                    var string="";
+                    for(i=0;i<optionArray.length;i++)
+                    {
+                        string=string+"<option>"+optionArray[i]+"</option>";
+                    }
+                    string="<select name='lol'>"+string+"</select>";
+                    document.getElementById('output').innerHTML=string;
+            }
+        </script>
+    </head>
+    <body>
+        <select id="input" onchange="Selecting()">
+            <label for="">country/countinent</label>
+                <option value=""> --Choose Country/Countinent--</option>
+                <option value="US">America</option>
+                <option value="CN">China</option>
+                <option value="EU">Europe</option>
+                <option value="IN">India</option>
+                <option value="JP">Japan</option>
+                <option value="CA">Canada</option>
+                <option value="SG">Singapore</option>
+        </select>
+        <div id ="output">
+            <select>
+                <label for="">Stock Market</label>
+                <option></option>
+            </select>
+        </div>
+    </body>
+</html>
